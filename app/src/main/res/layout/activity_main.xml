@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lds.myapplication.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/uno"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/black">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Crazy Layouts"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/uno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cuatro"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/numeros"
+        android:padding="40dp"
+        android:text="1"></TextView>
+
+    <TextView
+        android:id="@+id/dos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/uno"
+        android:layout_toEndOf="@+id/uno"
+        android:layout_toRightOf="@+id/uno"
+        android:background="@color/numeros"
+        android:padding="40dp"
+        android:text="2"></TextView>
+
+    <TextView
+        android:id="@+id/tres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dos"
+        android:layout_toEndOf="@+id/dos"
+        android:layout_toRightOf="@+id/dos"
+        android:background="@color/numeros"
+        android:padding="40dp"
+        android:text="3"></TextView>
+
+    <TextView
+        android:id="@+id/divi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tres"
+        android:layout_toEndOf="@+id/tres"
+        android:layout_toRightOf="@+id/tres"
+        android:background="@color/acciones"
+        android:padding="40dp"
+        android:text="/"></TextView>
+
+    <TextView
+        android:id="@+id/cuatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@color/numeros"
+        android:padding="40dp"
+        android:text="4"></TextView>
+
+    <TextView
+        android:id="@+id/cinco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dos"
+        android:layout_toEndOf="@+id/cuatro"
+        android:layout_toRightOf="@+id/cuatro"
+        android:background="@color/numeros"
+        android:padding="40dp"
+        android:text="5"></TextView>
+
+    <TextView
+        android:id="@+id/seis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nueve"
+        android:layout_toEndOf="@+id/dos"
+        android:layout_toRightOf="@+id/dos"
+        android:background="@color/numeros"
+        android:padding="40dp"
+        android:text="6"></TextView>
+
+    <TextView
+        android:id="@+id/multiplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/res"
+        android:layout_alignRight="@+id/res"
+        android:layout_alignTop="@+id/seis"
+        android:layout_toRightOf="@+id/tres"
+        android:background="@color/acciones"
+        android:padding="40dp"
+        android:text="x"></TextView>
+
+
+    <TextView
+        android:id="@+id/siete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/ocho"
+        android:background="@color/numeros"
+        android:padding="40dp"
+        android:text="7"></TextView>
+
+    <TextView
+        android:id="@+id/ocho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cinco"
+        android:layout_alignStart="@+id/cinco"
+        android:layout_alignTop="@+id/nueve"
+        android:background="@color/numeros"
+        android:padding="40dp"
+        android:text="8"></TextView>
+
+    <TextView
+        android:id="@+id/nueve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cinco"
+        android:layout_toEndOf="@+id/ocho"
+        android:layout_toRightOf="@+id/ocho"
+        android:background="@color/numeros"
+        android:padding="40dp"
+        android:text="9"></TextView>
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seis"
+        android:layout_toEndOf="@+id/seis"
+        android:layout_toRightOf="@+id/seis"
+        android:background="@color/acciones"
+        android:padding="40dp"
+        android:text="-"></TextView>
+
+    <TextView
+        android:id="@+id/punto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/ocho"
+        android:background="@color/numeros"
+        android:padding="40dp"
+        android:text="."></TextView>
+
+    <TextView
+        android:id="@+id/cero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/siete"
+        android:layout_toRightOf="@+id/punto"
+        android:layout_toStartOf="@+id/nueve"
+        android:background="@color/numeros"
+        android:padding="40dp"
+        android:text="0"></TextView>
+
+    <TextView
+        android:id="@+id/igual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ocho"
+        android:layout_toEndOf="@+id/ocho"
+        android:layout_toLeftOf="@+id/res"
+        android:layout_toRightOf="@+id/ocho"
+        android:background="@color/numeros"
+        android:padding="40dp"
+        android:text="="></TextView>
+
+    <TextView
+        android:id="@+id/mas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/res"
+        android:layout_alignRight="@+id/res"
+        android:layout_below="@+id/nueve"
+        android:layout_toEndOf="@+id/igual"
+        android:layout_toRightOf="@+id/igual"
+        android:background="@color/acciones"
+        android:padding="40dp"
+        android:text="+"></TextView>
+
+
+</RelativeLayout>
