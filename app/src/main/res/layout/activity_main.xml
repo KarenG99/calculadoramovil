@@ -63,7 +63,7 @@
         android:text="3"></TextView>
 
     <TextView
-        android:id="@+id/divi"
+        android:id="@+id/division"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/tres"
@@ -153,7 +153,7 @@
         android:text="9"></TextView>
 
     <TextView
-        android:id="@+id/res"
+        android:id="@+id/resta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/seis"
@@ -192,18 +192,18 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/ocho"
         android:layout_toEndOf="@+id/ocho"
-        android:layout_toLeftOf="@+id/res"
+        android:layout_toLeftOf="@+id/resta"
         android:layout_toRightOf="@+id/ocho"
         android:background="@color/numeros"
         android:padding="40dp"
         android:text="="></TextView>
 
     <TextView
-        android:id="@+id/mas"
+        android:id="@+id/suma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/res"
-        android:layout_alignRight="@+id/res"
+        android:layout_alignEnd="@+id/resta"
+        android:layout_alignRight="@+id/resta"
         android:layout_below="@+id/nueve"
         android:layout_toEndOf="@+id/igual"
         android:layout_toRightOf="@+id/igual"
